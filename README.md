@@ -32,6 +32,8 @@ Projeto aplicado para a WWDC 2020 Swift Challenge
 
 ## Demo
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/96dd859b57de4c1ea1af9a5a5f77e94e)](https://app.codacy.com/manual/Preddo/we-are-all-connected?utm_source=github.com&utm_medium=referral&utm_content=Preddo/we-are-all-connected&utm_campaign=Badge_Grade_Settings)
+
 [Assista no youtube!](https://www.youtube.com/watch?v=rNC6clBwlx0&t=2s)
 
 ## Tecnologias 
