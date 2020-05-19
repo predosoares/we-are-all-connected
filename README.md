@@ -10,11 +10,13 @@
 </h4>
 
 <p align="center">
+  [![Codacy Badge](https://api.codacy.com/project/badge/Grade/96dd859b57de4c1ea1af9a5a5f77e94e)](https://app.codacy.com/manual/Preddo/we-are-all-connected?utm_source=github.com&utm_medium=referral&utm_content=Preddo/we-are-all-connected&utm_campaign=Badge_Grade_Settings)
+</p>
+
+<p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Preddo/we-are-all-connected">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Preddo/we-are-all-connected">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/Preddo/we-are-all-connected">
-
-  [![Codacy Badge](https://api.codacy.com/project/badge/Grade/96dd859b57de4c1ea1af9a5a5f77e94e)](https://app.codacy.com/manual/Preddo/we-are-all-connected?utm_source=github.com&utm_medium=referral&utm_content=Preddo/we-are-all-connected&utm_campaign=Badge_Grade_Settings)
   
   <a href="https://github.com/Preddo/we-are-all-connected/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Preddo/we-are-all-connected">
