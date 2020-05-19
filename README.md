@@ -9,8 +9,6 @@
   WWDC 2020  Swift Challenge
 </h4>
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8db599bb45ed4ad7a0ae645fc942206a)](https://www.codacy.com/manual/Preddo/we-are-all-connected?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Preddo/we-are-all-connected&amp;utm_campaign=Badge_Grade)
-
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Preddo/we-are-all-connected">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Preddo/we-are-all-connected">
