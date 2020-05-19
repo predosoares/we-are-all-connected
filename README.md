@@ -14,10 +14,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Preddo/we-are-all-connected">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/Preddo/we-are-all-connected">
 
-
-  <a href="https://www.codacy.com/app/lukemorales/gobarber-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lukemorales/gobarber-api&amp;utm_campaign=Badge_Grade">
-    <img alt="Codacy grade" src="https://api.codacy.com/project/badge/Grade/1ca82febe92a47e4a9a03d6621617cc0">
-  </a>
+  [![Codacy Badge](https://api.codacy.com/project/badge/Grade/96dd859b57de4c1ea1af9a5a5f77e94e)](https://app.codacy.com/manual/Preddo/we-are-all-connected?utm_source=github.com&utm_medium=referral&utm_content=Preddo/we-are-all-connected&utm_campaign=Badge_Grade_Settings)
   
   <a href="https://github.com/Preddo/we-are-all-connected/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Preddo/we-are-all-connected">
@@ -31,8 +28,6 @@
 Projeto aplicado para a WWDC 2020 Swift Challenge
 
 ## Demo
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/96dd859b57de4c1ea1af9a5a5f77e94e)](https://app.codacy.com/manual/Preddo/we-are-all-connected?utm_source=github.com&utm_medium=referral&utm_content=Preddo/we-are-all-connected&utm_campaign=Badge_Grade_Settings)
 
 [Assista no youtube!](https://www.youtube.com/watch?v=rNC6clBwlx0&t=2s)
 
