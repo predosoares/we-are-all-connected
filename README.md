@@ -46,4 +46,4 @@ Para construir esse playground book eu utilizei o [Swift Playgrounds Author Temp
 [Tutorial em português sobre o Swift Playgrounds Author Template](https://www.youtube.com/watch?v=zSbsntPFVJM)
 
 ---
-Feito com ♥ por Pedro Soares :wave: [Entr em contato!](https://www.linkedin.com/in/pedro-soares-0a075916a/)
+Feito com ♥ por Pedro Soares :wave: [Entre em contato!](https://www.linkedin.com/in/pedro-soares-0a075916a/)
