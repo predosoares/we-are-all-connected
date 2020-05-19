@@ -26,8 +26,6 @@
   <a href="https://github.com/Preddo/we-are-all-connected/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/Preddo/we-are-all-connected">
   </a>
-  
-  <img alt="GitHub" src="https://img.shields.io/github/license/Preddo/we-are-all-connected">   
 </p>
 
 Projeto aplicado para a WWDC 2020 Swift Challenge
@@ -37,7 +35,7 @@ Projeto aplicado para a WWDC 2020 Swift Challenge
 [Assista no youtube!](https://www.youtube.com/watch?v=rNC6clBwlx0&t=2s)
 
 ## Tecnologias 
-Para construir esse playground book eu utilizei o [Swift Playgrounds Author Template](https://developer.apple.com/download/more/?=Swift%20Playgrounds%20Author%20Template) públicado pela própria Apple. A versão disponível no link só irá gerar um playground book se for executado no [Xcode 11.1](https://developer.apple.com/download/more/?=Xcode%2011.1), que irá gerar um swift playground na versão 3.3. Além do template, elaboração do projeto foi utilizado a biblioteca SpriteKit.
+Para construir esse playground book eu utilizei o [Swift Playgrounds Author Template](https://developer.apple.com/download/more/?=Swift%20Playgrounds%20Author%20Template) públicado pela própria Apple. A versão disponível no link só irá gerar um playground book se for executado no [Xcode 11.1](https://developer.apple.com/download/more/?=Xcode%2011.1), que irá gerar um swift playground na versão 3.3. Além do template, na elaboração do projeto foi utilizado a biblioteca SpriteKit.
 
 ## Referências
 
@@ -48,4 +46,4 @@ Para construir esse playground book eu utilizei o [Swift Playgrounds Author Temp
 [Tutorial em português sobre o Swift Playgrounds Author Template](https://www.youtube.com/watch?v=zSbsntPFVJM)
 
 ---
-Feito com ♥ por Pedro Soares :wave: [Get in touch!](https://www.linkedin.com/in/pedro-soares-0a075916a/)
+Feito com ♥ por Pedro Soares :wave: [Entr em contato!](https://www.linkedin.com/in/pedro-soares-0a075916a/)
