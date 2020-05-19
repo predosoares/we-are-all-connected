@@ -29,6 +29,6 @@
 	<key>SupportsDarkMode</key>
 	<true/>
 	<key>ImageReference</key>
-	<string>BookCover.png</string>
+	<string>3DBookCover.png</string>
 </dict>
 </plist>

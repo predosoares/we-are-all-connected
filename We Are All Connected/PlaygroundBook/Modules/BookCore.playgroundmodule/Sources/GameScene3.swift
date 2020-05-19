@@ -50,7 +50,7 @@ public class GameScene3: SKScene {
         self.setupAtomSprite()
         self.setupCellsSprite()
         self.setupTreesSprite()
-        //self.addSound()
+        self.addSound()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
             self.setupArrowsSprite()
@@ -76,7 +76,7 @@ public class GameScene3: SKScene {
     }
     
     private func setupArmsSprite() {
-        leftArmSprite.texture = SKTexture(imageNamed: "LeftArm" )
+        leftArmSprite.texture = SKTexture(imageNamed: "3DLeftArm" )
         leftArmSprite.size = CGSize(width: frame.width*(4/11) * 1.3, height: frame.height*(5/28) * 1.3)
         leftArmSprite.position = CGPoint(x: frame.midX - (frame.width*(1.6/3) * 1.3)/3.2 - 400, y: frame.midY - 200 - 20)
         
@@ -87,13 +87,13 @@ public class GameScene3: SKScene {
 
         leftArmSprite.run(moveLeft)
         
-        rightArmSprite.texture = SKTexture(imageNamed: "RightArm" )
+        rightArmSprite.texture = SKTexture(imageNamed: "3DRightArm" )
         rightArmSprite.size = CGSize(width: frame.width*(1.6/3) * 1.3, height: (frame.height)*(2/3) * 1.3)
-        rightArmSprite.position = CGPoint(x: frame.midX + (frame.width*(1.6/3) * 1.3)/3.2 + 400, y: frame.midY - 144 - 20)
+        rightArmSprite.position = CGPoint(x: frame.midX + (frame.width*(1.6/3) * 1.3)/3.2 + 400, y: frame.midY - 144 - 15)
         
         self.addChild(rightArmSprite)
         
-        let move = SKAction.moveTo(x: frame.midX + 5 + (frame.width*(1.6/3) * 1.3)/3.2, duration: 2)
+        let move = SKAction.moveTo(x: frame.midX - 5 + (frame.width*(1.6/3) * 1.3)/3.2, duration: 2)
         move.timingMode = SKActionTimingMode.easeOut
 
         rightArmSprite.run(move)
@@ -111,6 +111,8 @@ public class GameScene3: SKScene {
         }
         
         node.setScale(0.1)
+        node.alpha = 0.0
+        textDisplayNode.alpha = 0.0
         
         focusedSprite.removeAllChildren()
         focusedSprite.addChild(node)
@@ -118,6 +120,7 @@ public class GameScene3: SKScene {
         
         
         let scaleUp = SKAction.scale(to: 1, duration: 2)
+        scaleUp.timingMode = SKActionTimingMode.easeOut
         node.run(scaleUp)
         
         let rotate = SKAction.rotate(byAngle: .pi/30, duration: 2)
@@ -126,12 +129,20 @@ public class GameScene3: SKScene {
         
         node.run(rotateGroup)
         
+        let fadeIn = SKAction.fadeIn(withDuration: 2)
+        fadeIn.timingMode = SKActionTimingMode.easeOut
+
+        textDisplayNode.run(fadeIn)
+        node.run(fadeIn)
+
+        
         let textLabel = SKLabelNode(text: currentTimeString())
         textLabel.fontName = "Helvetica-Neue-BOLD"
         textLabel.fontSize = 12
         textLabel.color = .gray
-        textLabel.position = CGPoint(x: 40, y: 270)
-        focusedSprite.addChild(textLabel)
+        textLabel.position = CGPoint(x: 35, y: 62.5)
+        textDisplayNode.removeAllChildren()
+        textDisplayNode.addChild(textLabel)
     }
     
     private func currentTimeString() -> String {
@@ -153,7 +164,7 @@ public class GameScene3: SKScene {
     }
     
     private func setupAtomTextSprite() {
-        atomTextSprite.texture = SKTexture(imageNamed: "AtomRenewTextDisplay" )
+        atomTextSprite.texture = SKTexture(imageNamed: "3DAtomRenewTextDisplay" )
         atomTextSprite.size = CGSize(width: 195, height: 200)
         atomTextSprite.position = CGPoint(x: 5, y: 210)
         
@@ -171,7 +182,7 @@ public class GameScene3: SKScene {
     }
     
     private func setupCellsTextSprite() {
-        cellsTextSprite.texture = SKTexture(imageNamed: "CellsRenewTextDisplay" )
+        cellsTextSprite.texture = SKTexture(imageNamed: "3DCellsRenewTextDisplay" )
         cellsTextSprite.size = CGSize(width: 195, height: 200)
         cellsTextSprite.position = CGPoint(x: 5, y: 210)
         
@@ -189,7 +200,7 @@ public class GameScene3: SKScene {
     }
     
     private func setupTreesTextSprite() {
-        treesTextSprite.texture = SKTexture(imageNamed: "TreesRenewTextDisplay" )
+        treesTextSprite.texture = SKTexture(imageNamed: "3DTreesRenewTextDisplay" )
         treesTextSprite.size = CGSize(width: 195, height: 200)
         treesTextSprite.position = CGPoint(x: 5, y: 210)
         
@@ -200,7 +211,7 @@ public class GameScene3: SKScene {
         let fadeIn = SKAction.fadeIn(withDuration: 0.3)
         fadeIn.timingMode = SKActionTimingMode.easeIn
         
-        arrowLeftSprite.texture = SKTexture(imageNamed: "ArrowLeft" )
+        arrowLeftSprite.texture = SKTexture(imageNamed: "3DArrowLeft" )
         arrowLeftSprite.size = CGSize(width: 45, height: 60)
         arrowLeftSprite.position = CGPoint(x:frame.midX - 160, y: frame.midY - 20)
         arrowLeftSprite.name = "previous"
@@ -211,7 +222,7 @@ public class GameScene3: SKScene {
         arrowLeftSprite.run(fadeIn)
         
         
-        arrowRightSprite.texture = SKTexture(imageNamed: "ArrowRight" )
+        arrowRightSprite.texture = SKTexture(imageNamed: "3DArrowRight" )
         arrowRightSprite.size = CGSize(width: 45, height: 60)
         arrowRightSprite.position = CGPoint(x: frame.midX + 160, y: frame.midY - 20)
         arrowRightSprite.name = "next"
@@ -266,9 +277,10 @@ public class GameScene3: SKScene {
     
     private func addSound() {
         
-        let backgroundSound = SKAudioNode(fileNamed: "Dana")
+        let backgroundSound = SKAudioNode(fileNamed: "Eternal_Structures")
         addChild(backgroundSound)
         
+        backgroundSound.run(SKAction.changeVolume(by: -0.90, duration: 0))
         backgroundSound.run(SKAction.play())
     }
 }

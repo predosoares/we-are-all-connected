@@ -50,21 +50,26 @@ public class GameScene1: SKScene {
     }
     
     private func setupDoorsScene() {
-        let imageLeftWidth = frame.height * 738 / 1114
-        let imageRightWidth = frame.height * 856 / 1113
+        let imageLeftWidth = frame.height * 797 / 1166
+        let imageRightWidth = frame.height * 917 / 1165
         
-        let imageRightPadding = ( frame.height * (856 - 738 ) / 1113 ) + 3
+        //797 × 1166
+        //917 × 1165
         
-        doorLeftSprite.texture = SKTexture(imageNamed: "DoorLeft" )
+        let imageRightPadding = ( frame.height * (917 - 797 ) / 1165 ) + 3
+        
+        doorLeftSprite.texture = SKTexture(imageNamed: "3DDoorLeft" )
         doorLeftSprite.size = CGSize(width: imageLeftWidth, height: frame.height)
+        doorLeftSprite.setScale(1.09)
         doorLeftSprite.position = CGPoint(x: frame.midX - imageLeftWidth/2, y: frame.midY)
 
         self.addChild(doorLeftSprite)
 
         print(frame.height)
         
-        doorRightSprite.texture = SKTexture(imageNamed: "DoorRight" )
+        doorRightSprite.texture = SKTexture(imageNamed: "3DDoorRight" )
         doorRightSprite.size = CGSize(width: imageRightWidth, height: frame.height)
+        doorRightSprite.setScale(1.09)
         doorRightSprite.position = CGPoint(x: frame.midX + imageRightWidth/2 - imageRightPadding, y: frame.midY)
 
         self.addChild(doorRightSprite)
@@ -85,17 +90,17 @@ public class GameScene1: SKScene {
         moveRight.timingMode = SKActionTimingMode.easeIn
         
         doorRightSprite.run(moveRight)
-        fAlreadyOpen = true
         
+        fAlreadyOpen = true
         PlaygroundPage.current.assessmentStatus = .pass(message: " **Great!** When you're ready, go to the [**Next Page**](@next)!")
     }
     
     private func addSound() {
         
-        let backgroundSound = SKAudioNode(fileNamed: "Dana")
+        let backgroundSound = SKAudioNode(fileNamed: "Eternal_Structures")
         addChild(backgroundSound)
         
-        backgroundSound.run(SKAction.changeVolume(by: -0.98, duration: 0))
+        backgroundSound.run(SKAction.changeVolume(by: -0.90, duration: 0))
         backgroundSound.run(SKAction.play())
     }
 }

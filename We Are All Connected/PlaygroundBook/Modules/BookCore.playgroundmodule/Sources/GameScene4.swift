@@ -27,7 +27,7 @@ public class GameScene4: SKScene {
         self.setupAvatar()
         self.setupTextLabel1()
         self.setupTextLabel2()
-        //self.addSound()
+        self.addSound()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
              PlaygroundPage.current.assessmentStatus = .pass(message: "I am very happy that you got here and read the whole book! 😁 Now I have a mission for you, if you really liked the experience share it with others. ")
@@ -97,10 +97,10 @@ public class GameScene4: SKScene {
     }
     
     public func addSound() {
-        
-        let backgroundSound = SKAudioNode(fileNamed: "Dana")
+        let backgroundSound = SKAudioNode(fileNamed: "Eternal_Structures")
         addChild(backgroundSound)
         
+        backgroundSound.run(SKAction.changeVolume(by: -0.90, duration: 0))
         backgroundSound.run(SKAction.play())
     }
 }
